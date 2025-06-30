@@ -1,7 +1,8 @@
 // App.tsx
 import React, { useEffect, useState } from 'react';
-import { StatusBar, View } from 'react-native';
+import { StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
+import { Provider as PaperProvider } from 'react-native-paper';
 import { AppProvider } from './src/context/AppContext';
 import MainNavigator from './src/navigation/MainNavigator';
 import { initSecureStorage } from './src/utils/security';
@@ -17,7 +18,11 @@ export default function App() {
       await initSecureStorage();
       await loadInitialSettings();
       await setupBackgroundTasks();
-      setIsReady(true);
+      
+      // Simulate loading time
+      setTimeout(() => {
+        setIsReady(true);
+      }, 2000);
     };
 
     initialize();
@@ -28,11 +33,13 @@ export default function App() {
   }
 
   return (
-    <AppProvider>
-      <StatusBar barStyle="dark-content" />
-      <NavigationContainer>
-        <MainNavigator />
-      </NavigationContainer>
-    </AppProvider>
+    <PaperProvider>
+      <AppProvider>
+        <StatusBar barStyle="dark-content" />
+        <NavigationContainer>
+          <MainNavigator />
+        </NavigationContainer>
+      </AppProvider>
+    </PaperProvider>
   );
 }
