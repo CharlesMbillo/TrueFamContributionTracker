@@ -1,0 +1,64 @@
+~/workspace$ npx expo prebuild
+WARNING: The legacy expo-cli does not support Node +17. Migrate to the new local Expo CLI: https://blog.expo.dev/the-new-expo-cli-f4250d8e3421.
+┌───────────────────────────────────────────────────────────────────────────┐
+│                                                                           │
+│   The global expo-cli package has been deprecated.                        │
+│                                                                           │
+│   The new Expo CLI is now bundled in your project in the expo package.    │
+│   Learn more: https://blog.expo.dev/the-new-expo-cli-f4250d8e3421.        │
+│                                                                           │
+│   To use the local CLI instead (recommended in SDK 46 and higher), run:   │
+│   › npx expo <command>                                                    │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Cannot determine which native SDK version your project uses because the module `expo` is not installed. Please install it with `yarn add expo` and try again.
+
+~/workspace$ cd /TrueFamContributionTracker
+bash: cd: /TrueFamContributionTracker: No such file or directory
+~/workspace$ cd TrueFamContributionTracker
+bash: cd: TrueFamContributionTracker: No such file or directory
+~/workspace$ ls
+android         babel.config.js      Gemfile         metro.config.js    regexPatterns.ts  __tests__
+AppContext.tsx  background.ts        index.js        package.json       SetupScreen.tsx   tsconfig.json
+app.json        build-debug.bat      ios             package-lock.json  smsProcessor.ts   whatsappService.ts
+App.tsx         DashboardScreen.tsx  jest.config.js  README.md          src
+~/workspace$ npx expo prebuild
+WARNING: The legacy expo-cli does not support Node +17. Migrate to the new local Expo CLI: https://blog.expo.dev/the-new-expo-cli-f4250d8e3421.
+┌───────────────────────────────────────────────────────────────────────────┐
+│                                                                           │
+│   The global expo-cli package has been deprecated.                        │
+│                                                                           │
+│   The new Expo CLI is now bundled in your project in the expo package.    │
+│   Learn more: https://blog.expo.dev/the-new-expo-cli-f4250d8e3421.        │
+│                                                                           │
+│   To use the local CLI instead (recommended in SDK 46 and higher), run:   │
+│   › npx expo <command>                                                    │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Cannot determine which native SDK version your project uses because the module `expo` is not installed. Please install it with `yarn add expo` and try again.
+
+~/workspace$ ^C
+~/workspace$ eas build -p android --profile preview
+An Expo user account is required to proceed.
+
+Log in to EAS with email or username (exit and run eas login --help to see other login options)
+✔ Email or username … mbillocharles@gmail.com
+✔ Password … *************
+✔ Generated eas.json. Learn more: https://docs.expo.dev/build-reference/eas-json/
+EAS project not configured.
+✔ Would you like to automatically create an EAS project for @saba7/truefamcontributiontracker? … yes
+✔ Created @saba7/truefamcontributiontracker: https://expo.dev/accounts/saba7/projects/truefamcontributiontracker on EAS
+✔ Linked local project to EAS project 08d617b1-898d-4023-9612-ec990a9fbe76
+Resolved "preview" environment for the build. Learn more: https://docs.expo.dev/eas/environment-variables/#setting-the-environment-for-your-builds
+No environment variables with visibility "Plain text" and "Sensitive" found for the "preview" environment on EAS.
+
+No remote versions are configured for this project, versionCode will be initialized based on the value from the local project.
+✔ Initialized versionCode with 1.
+✔ Using remote Android credentials (Expo server)
+✔ Generate a new Android Keystore? … yes
+Detected that you do not have keytool installed locally.
+✖ Generating keystore in the cloud...
+Request failed: 500 (Internal Server Error)
+    Error: build command failed.
