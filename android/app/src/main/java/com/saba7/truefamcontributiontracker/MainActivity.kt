@@ -1,4 +1,4 @@
-package com.truefamcontributiontracker
+package com.saba7.truefamcontributiontracker
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

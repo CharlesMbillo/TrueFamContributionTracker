@@ -1,4 +1,4 @@
-package com.truefamcontributiontracker
+package com.saba7.truefamcontributiontracker
 
 import android.app.Application
 import com.facebook.react.PackageList
