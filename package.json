@@ -7,11 +7,14 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "npx react-native start --reset-cache",
-    "test": "jest"
+    "test": "jest",
+    "prebuild": "expo prebuild",
+    "build:android": "eas build -p android"
   },
   "dependencies": {
     "react": "19.1.0",
     "react-native": "0.80.0",
+    "expo": "~51.0.0",
     "@react-native/new-app-screen": "0.80.0",
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/stack": "^6.3.20",
