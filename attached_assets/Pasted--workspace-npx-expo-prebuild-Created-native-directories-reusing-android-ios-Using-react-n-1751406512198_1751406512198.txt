@@ -1,0 +1,19 @@
+~/workspace$ npx expo prebuild
+✔ Created native directories | reusing /android, /ios
+› Using react-native@0.80.0 instead of recommended react-native@0.79.4.
+✔ Updated package.json | no changes
+» android: EDGE_TO_EDGE_PLUGIN: No configuration found for `edgeToEdgeEnabled` field in the project app config, falling back to false. In Android 16+ (targetSdkVersion 36) it will no longer be possible to disable edge-to-edge. Learn more: https://expo.fyi/edge-to-edge-rollout
+» ios: icon: No icon is defined in the Expo config.
+✖ Prebuild failed
+Error: [ios.expoPlist]: withIosExpoPlistBaseMod: A runtime version is set in your Expo.plist, but is missing from your Expo app config (app.json/app.config.js). Set runtimeVersion in your Expo app config or remove EXUpdatesRuntimeVersion from your Expo.plist.
+Error: [ios.expoPlist]: withIosExpoPlistBaseMod: A runtime version is set in your Expo.plist, but is missing from your Expo app config (app.json/app.config.js). Set runtimeVersion in your Expo app config or remove EXUpdatesRuntimeVersion from your Expo.plist.
+    at setVersionsConfigAsync (/home/runner/workspace/node_modules/@expo/config-plugins/build/ios/Updates.js:142:11)
+    at async setUpdatesConfigAsync (/home/runner/workspace/node_modules/@expo/config-plugins/build/ios/Updates.js:134:10)
+    at async /home/runner/workspace/node_modules/@expo/config-plugins/build/ios/Updates.js:75:25
+    at async action (/home/runner/workspace/node_modules/@expo/config-plugins/build/plugins/withMod.js:199:23)
+    at async interceptingMod (/home/runner/workspace/node_modules/@expo/config-plugins/build/plugins/withMod.js:104:21)
+    at async action (/home/runner/workspace/node_modules/@expo/config-plugins/build/plugins/createBaseMod.js:60:21)
+    at async interceptingMod (/home/runner/workspace/node_modules/@expo/config-plugins/build/plugins/withMod.js:104:21)
+    at async evalModsAsync (/home/runner/workspace/node_modules/@expo/config-plugins/build/plugins/mod-compiler.js:206:25)
+    at async compileModsAsync (/home/runner/workspace/node_modules/@expo/config-plugins/build/plugins/mod-compiler.js:123:10)
+    at async configureProjectAsync (/home/runner/workspace/node_modules/@expo/cli/build/src/prebuild/configureProjectAsync.js:92:14)
