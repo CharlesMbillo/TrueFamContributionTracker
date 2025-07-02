@@ -1,0 +1,18 @@
+current directory: /home/runner/workspace/vendor/bundle/ruby/3.2.0/gems/nkf-0.2.0/ext/nkf
+/nix/store/v45ny4knx2a7mmv12nm72a79dr8hlzqc-ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/runner/workspace/vendor/bundle/ruby/3.2.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250701-1234-5fdpro sitelibdir\=./.gem.20250701-1234-5fdpro clean
+
+current directory: /home/runner/workspace/vendor/bundle/ruby/3.2.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250701-1234-5fdpro sitelibdir\=./.gem.20250701-1234-5fdpro
+compiling nkf.c
+linking shared-object nkf.so
+
+current directory: /home/runner/workspace/vendor/bundle/ruby/3.2.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250701-1234-5fdpro sitelibdir\=./.gem.20250701-1234-5fdpro install
+install -c -p -m 755 nkf.so ./.gem.20250701-1234-5fdpro
+
+current directory: /home/runner/workspace/vendor/bundle/ruby/3.2.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250701-1234-5fdpro sitelibdir\=./.gem.20250701-1234-5fdpro clean
