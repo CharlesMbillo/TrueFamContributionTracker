@@ -3,18 +3,31 @@
     "name": "TrueFamContributionTracker",
     "slug": "truefamcontributiontracker",
     "version": "1.0.0",
-    "runtimeVersion": "1.0.0",
-    "platforms": ["ios", "android"],
-    "extra": {
-      "eas": {
-        "projectId": "08d617b1-898d-4023-9612-ec990a9fbe76"
-      }
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
     },
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "sdkVersion": "53.0.0",
     "android": {
       "package": "com.saba7.truefamcontributiontracker"
     },
     "ios": {
       "bundleIdentifier": "com.saba7.truefamcontributiontracker"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "08d617b1-898d-4023-9612-ec990a9fbe76"
+      }
     }
   }
 }
