@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.nano
     pkgs.openssh
     pkgs.imagemagick
     pkgs.jdk17

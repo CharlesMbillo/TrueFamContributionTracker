@@ -104,6 +104,20 @@ build/
 local.properties
 *.iml
 
+# Allow these critical Android files
+!android/gradle/
+!android/gradlew
+!android/gradlew.bat
+!android/gradle.properties
+!android/build.gradle
+!android/settings.gradle
+!android/app/build.gradle
+!android/app/src/main/AndroidManifest.xml
+
+# But keep ignoring build outputs
+android/app/build/
+android/build/
+
 # node.js
 #
 node_modules/

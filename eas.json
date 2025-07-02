@@ -4,6 +4,7 @@
     "appVersionSource": "remote"
   },
   "{
+(Fix Gradle build configuration with eas.json files)
   "build": {
     "preview": {
       "android": {
@@ -25,15 +26,18 @@
       "android": {
         "buildType": "apk"
       }
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "node": "18.13.0",
+      "preBuildCommand": "npx expo prebuild --platform android --no-install"
+(Fix Gradle build configuration with eas.json files)
     },
     "production": {
-      "autoIncrement": true,
       "android": {
-        "buildType": "apk"
+        "buildType": "app-bundle"
       }
     }
-  },
-  "submit": {
-    "production": {}
   }
 }
+
+
