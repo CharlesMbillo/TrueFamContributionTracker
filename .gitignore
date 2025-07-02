@@ -151,3 +151,7 @@ buck-out/
 web-build/
 
 # @end expo-cli
+android/app/build
+android/build
+ios/build
+DerivedData
