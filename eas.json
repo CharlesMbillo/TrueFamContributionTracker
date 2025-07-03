@@ -1,11 +1,16 @@
 {
-  "cli": {
-    "version": ">= 3.0.0"
-  },
   "build": {
     "preview": {
       "android": {
         "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
+    "preview": {
+      "android": {
+        "serviceAccountKeyPath": "path/to/service-account-key.json",
+        "track": "internal"
       }
     }
   }
