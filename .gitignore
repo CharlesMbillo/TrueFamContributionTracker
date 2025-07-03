@@ -105,6 +105,7 @@ local.properties
 *.iml
 
 # Allow these critical Android files
+!android/gradle/wrapper/**
 !android/gradle/
 !android/gradlew
 !android/gradlew.bat
