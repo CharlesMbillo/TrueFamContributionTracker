@@ -14,8 +14,7 @@
       "android",
       "ios"
     ],
-    "runtimeVersion": "1.0.0"
-
+    "runtimeVersion": "1.0.0",
     "sdkVersion": "53.0.0",
     "android": {
       "package": "com.saba7.truefamcontributiontracker"
